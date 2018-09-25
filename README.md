@@ -21,7 +21,7 @@ Those should work for everythin you need at the moment.  I believe you only get 
 
 # How it works
 
-  You will want to run output.py in any python IDE of your choice.  It will only listen to one command at a time (I will fix that, of course, as I have more time to work on it) but it will wait for you to say a command.  When you say a command such as "list everything in my current directory", it will listen to basic key words and then type the command based on that.  
+  It uses a google speech recognition api to hear the commands.  You will want to run output.py in any python IDE of your choice.  It will only listen to one command at a time (I will fix that, of course, as I have more time to work on it) but it will wait for you to say a command.  When you say a command such as "list everything in my current directory", it will listen to basic key words and then type the command based on that.  
   For the example, it will hear "list" and ignore the other words and type out the command "ls" in the terminal.  Then, voila!  It will show a list of everything in the current directory.  Of course, since this is only run in python at the moment, it will type into the python shell "os.system('ls')" to list evertyhing and "os.system('pwd')" to show the current direcory you are in.
 
 # Goals/Milestones
@@ -33,3 +33,7 @@ Those should work for everythin you need at the moment.  I believe you only get 
  • Job scheduling
  
  • If I really have a lot of time: Firewalls, Network Management, Remote Access...
+ 
+# Shoutouts
+
+I would like to thank David Amos (author of the website link earlier) for explaining how to install the everything.  Also for providing a large chunk of code for implementing speech recognition.
